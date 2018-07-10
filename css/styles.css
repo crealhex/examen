@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(../img/fondo.png);
+  background-size: cover;
+}
+
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header__img img {
+  display: block;
+}
+
+.main-menu nav {
+  height: 50px;
+  background-color: #C29510;
+}
+
+.main-menu  li {
+  display: inline-block;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: #353535;
+  padding: 15px 20px;
+  line-height: 50px;
+}
+
+.main-menu .menu {
+  list-style: none;
+  float: right;
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.main-banner {
+  max-width: 1100px;
+  /* TODO: Se tiene que mejorar el tiempo entre slides */
+  overflow: hidden;
+  height: 300px;
+}
+
+.main-banner ul {
+  display: flex;
+  position: relative;
+  animation: slider 20s infinite alternate;
+  list-style: none;
+}
+
+@keyframes slider {
+  0% {left: 0}
+  33% {left: 0}
+
+  60% {left: -1100px}
+  66% {left: -1100px}
+
+  94% {left: -2200px}
+  100% {left: -2200px}
+}
+
+.texto {
+  height: 800px;
+  background-color: #fff;
+  padding: 20px 80px;
+}
+
+.texto1 {
+  text-align: justify;
+  color: #205628;
+  font-size: 17px;
+}
+
+.imagenes1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.texto1.recolored {
+  color: #074C7C;
+}
+
+.redes {
+  height: 180px;
+  background-color: #fdebd0;
+}
+
+.redes h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.sociales img {
+  width: 50px;
+}
+
+.sociales {
+  text-align: center;
+}
+
+.sociales li {
+  padding: 10px 15px;
+  display: inline;
+}
+
+.main-footer {
+  height: 150px;
+  background-color: #A9CCE3;
+  padding: 20px;
+}
+
+.direccion {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #873600;
+}
